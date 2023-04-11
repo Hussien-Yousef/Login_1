@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color:rgb(79 74 165);
+}
+.login-form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/contact_g.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.login {
+    max-width: 300px ;
+    border-radius: 25px;
+    text-align: center;
+    background-color:rgba(93, 164, 251, 0.212);
+}
+.login h2 {
+    color:white;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.login h2 i {
+    font-size: 25px;
+}
+.login input {
+    padding: 10px 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    border:1px solid  var(--main-color)  ;
+    color: var(--main-color) ;
+}
+.login .icon {
+    height: 0;
+    float: left;
+    position: relative;
+    left: 33px;
+    top: 10px;
+    color: var(--main-color);
+}
+.login .password {
+    top: 60px;
+}
+.login .btn {
+    cursor: pointer;
+    font: 20px bold;
+    transition: .3s ease;
+}
+.login .btn:hover {
+    background-color: var(--main-color) ;
+    color: white;
+}
+.login a {
+    display: flex;
+    color: white ;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: center;
+    margin: 15px 0;
+}
+.avater {
+    margin: 10px auto;
+    border-radius: 50%;
+    background: linear-gradient(-45deg,#157ae1,#c7a1ff );
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+}
+.avater  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(93 165 251 616);
+} 
+@media (max-width:315px) {
+    .login input {
+        padding: 10px 20px;
+    }
+}
+/* Social Icons */
+.login-form ul{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+}
+.login-form ul li { 
+    list-style: none;
+}
+.login-form ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgb(0, 0, 0,0.3);
+    background:linear-gradient(0deg, #ddd , #fff );
+    transition: 0.5s;
+}
+.login-form ul li a :hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    text-decoration: none;
+}
+.login-form ul li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff , #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+@media (min-width:1330px) {
+    .login-form ul {
+        bottom: 160px;
+    }
+}
